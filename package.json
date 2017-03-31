@@ -19,7 +19,6 @@
   "license": "ISC",
   "dependencies": {
     "micro": "^7.3.0",
-    "nightmare": "^2.10.0",
-    "snarkdown": "^1.2.2"
+    "nightmare": "^2.10.0"
   }
 }
