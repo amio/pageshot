@@ -4,14 +4,22 @@
   "description": "Screenshot a webpage.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
+  "now": {
+    "alias": "shot"
+  },
+  "keywords": [
+    "micro",
+    "micro-service",
+    "screenshot",
+    "webpage"
+  ],
+  "author": "Amio <amio.cn@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "micro": "^7.3.0",
-    "nightmare": "^2.10.0"
+    "nightmare": "^2.10.0",
+    "snarkdown": "^1.2.2"
   }
 }
