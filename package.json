@@ -10,7 +10,6 @@
     "alias": "shot"
   },
   "keywords": [
-    "micro",
     "micro-service",
     "screenshot",
     "webpage"
@@ -18,7 +17,7 @@
   "author": "Amio <amio.cn@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "micro": "^7.3.0",
+    "koa": "^2.2.0",
     "nightmare": "^2.10.0"
   }
 }

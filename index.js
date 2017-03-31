@@ -1,22 +1,30 @@
-const qs = require('querystring')
-const Url = require('url')
-const micro = require('micro')
+const Koa = require('koa')
 const Nightmare = require('nightmare')
 
-const screenshot = async (req, res) => {
-  const query = qs.parse(Url.parse(req.url).query)
-  const { url, height = 640, width = 960 } = query
+const app = new Koa()
 
-  if (!url) return require('fs').readFileSync('./intro.html', 'utf-8')
-
-  return Nightmare({gotoTimeout: 6000})
-    .viewport(parseInt(width), parseInt(height))
-    .goto(url)
-    .screenshot()
-    .end(result => {
-      res.setHeader('Content-Type', 'image/png')
-      return result
-    })
+const serveIntroHTML = async (ctx, next) => {
+  if (!ctx.query.url) {
+    ctx.body = require('fs').readFileSync('./intro.html', 'utf-8')
+  } else {
+    await next()
+  }
 }
 
-micro(screenshot).listen(3001)
+const screenshotService = async ctx => {
+  if (!ctx.query.url) return
+
+  const { url, height, width } = ctx.query
+  const result = await Nightmare({gotoTimeout: 6000})
+    .viewport(parseInt(width) || 960, parseInt(height) || 640)
+    .goto(url)
+    .screenshot()
+    .end()
+
+  ctx.res.setHeader('Content-Type', 'image/png')
+  ctx.body = result
+}
+
+app.use(serveIntroHTML)
+app.use(screenshotService)
+app.listen(3002)
