@@ -5,13 +5,14 @@
     <title>Shot - Screenshot a webpage as micro-service.</title>
     <style media="screen">
       body { text-align: center; font: 16px/2em -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif }
-      h1 { margin: 2em; font-size: 3rem }
-      input { outline: none; font-size: 1rem; padding: 0.5em; margin: 1em }
+      h1 { margin: 7rem; font-size: 4rem; font-family: 'Shadows Into Light Two', cursive; }
+      input { outline: none; font-size: 1rem; padding: 0.5em; margin: 1.5em 0; border: 1px solid #AAA }
+      input:focus { border-color: #ABC; box-shadow: 0 0 0 0.3em #DEF;}
       .submit { display: none }
       .url { width: 30rem }
       .size { width: 4em }
       footer { position: fixed; width: 100%; bottom: 0; line-height: 3rem;}
-      .loading { visibility: hidden; height: 0px; position: relative; top: -1.5em; }
+      .loading { visibility: hidden; height: 0px; position: relative; top: -2em; }
     </style>
   </head>
   <body>
@@ -20,12 +21,12 @@
     <form action="/" method="get">
       <input type="text" class="url" name="url" value="https://google.com" autofocus />
       <input type="submit" class="submit" /><br/>
-      <input type="number" class="size" name="width" value="960" /> x
-      <input type="number" class="size" name="height" value="640" />
+      <input type="number" class="size" name="width" placeholder="960" /> x
+      <input type="number" class="size" name="height" placeholder="640" />
     </form>
     <footer>
-      ISC License @ <a href="https://github.com/amio">Amio</a>
-      , <a href="https://github.com/amio/shot.now.sh">Github</a>
+      ISC License @ Amio,
+      <a href="https://github.com/amio/shot.now.sh">Fork me on Github</a>
     </footer>
     <script type="text/javascript">
       const form = document.querySelector('form')
@@ -33,5 +34,6 @@
         document.querySelector('.loading').style.visibility = 'visible'
       }
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
   </body>
 </html>
