@@ -1,13 +1,16 @@
 {
-  "name": "shot.now.sh",
+  "name": "pageshot",
   "version": "1.0.0",
-  "description": "Screenshot a webpage.",
+  "description": "A micro-service for generating image from webpage.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "now": {
-    "alias": "shot"
+    "alias": [
+      "shot",
+      "pageshot"
+    ]
   },
   "keywords": [
     "micro-service",

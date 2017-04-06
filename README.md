@@ -1,10 +1,10 @@
-# shot.now.sh
+# pageshot [WIP]
 
-Generate screenshot from webpage.
+A [micro-service](shot.now.sh) for generating image from webpage.
 
 ## Usage
 
-Navigate to [https://shot.now.sh/?url=https://google.com]
+Get (or navigate to) [https://shot.now.sh/?url=https://google.com]
 
 ## Query Params
 
