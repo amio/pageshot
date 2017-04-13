@@ -22,5 +22,8 @@
   "dependencies": {
     "koa": "^2.2.0",
     "nightmare": "^2.10.0"
+  },
+  "engines": {
+    "node": "7.9.0"
   }
 }

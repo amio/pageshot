@@ -1,7 +1,7 @@
 const Koa = require('koa')
 const Nightmare = require('nightmare')
 
-const PORT = 3003
+const PORT = process.env.PORT || 3003
 
 const serveIntroHTML = async (ctx, next) => {
   if (!ctx.query.url) {
@@ -26,6 +26,7 @@ const screenshotService = async ctx => {
     ctx.body = result
   } catch (e) {
     ctx.body = e.stack ? e.stack.toString() : JSON.stringify(e)
+    console.error(ctx.body)
   }
 }
 
@@ -35,5 +36,5 @@ app.use(screenshotService)
 app.listen(PORT)
 
 process.on('uncaughtException', (err) => {
-  console.log(`Caught exception: ${err}`)
+  console.error(`Caught exception: ${err}`)
 })

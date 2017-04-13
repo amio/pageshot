@@ -4,7 +4,11 @@ A [micro-service](shot.now.sh) for generating image from webpage.
 
 ## Usage
 
-Get (or navigate to) [https://shot.now.sh/?url=https://google.com]
+ENDPOINT: https://shot.now.sh
+
+Example:
+  - https://shot.now.sh/?url=https://google.com
+  - https://shot.now.sh/?url=https://google.com&height=960
 
 ## Query Params
 
