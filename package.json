@@ -4,7 +4,7 @@
   "description": "A micro-service for generating image from webpage.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "DEBUG=* node index.js"
   },
   "now": {
     "alias": [
@@ -22,5 +22,8 @@
   "dependencies": {
     "koa": "^2.2.0",
     "nightmare": "^2.10.0"
+  },
+  "engines": {
+    "node": "7.9.0"
   }
 }
