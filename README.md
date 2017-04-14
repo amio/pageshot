@@ -1,5 +1,7 @@
 # pageshot
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/amio/pageshot.svg)](https://greenkeeper.io/)
+
 A micro-service for generating image from webpage.
 
 Now only works on Mac, as Linux lack some runtime dependencies required by electron.
