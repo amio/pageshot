@@ -1,14 +1,16 @@
-# pageshot [WIP]
+# pageshot
 
-A [micro-service](shot.now.sh) for generating image from webpage.
+A micro-service for generating image from webpage.
+
+Now only works on Mac, as Linux lack some runtime dependencies required by electron.
 
 ## Usage
 
-ENDPOINT: https://shot.now.sh
+ENDPOINT: https://localhost:3003/
 
 Example:
-  - https://shot.now.sh/?url=https://google.com
-  - https://shot.now.sh/?url=https://google.com&height=960
+  - https://localhost:3003/?url=https://google.com
+  - https://localhost:3003/?url=https://google.com&height=960
 
 ## Query Params
 
