@@ -1,7 +1,7 @@
 {
   "name": "pageshot",
   "version": "1.0.0",
-  "description": "Screenshot as a service.",
+  "description": "Pageshot as a service.",
   "author": "Amio <amio.cn@gmail.com>",
   "license": "ISC",
   "main": "index.js",
