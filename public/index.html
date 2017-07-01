@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shot - Pageshot as a service.</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <h1>Shot</h1>
+        <div class="intro">pageshot as a service</div>
+      </div>
+      <form action="/shot" method="get">
+        <div class="loading">. . . LOADING . . .</div>
+        <input type="text" class="url" name="url" value="https://google.com" autofocus />
+        <input type="submit" class="submit" /><br/>
+        <input type="number" class="size" name="width" placeholder="1280" /> x
+        <input type="number" class="size" name="height" placeholder="800" />
+      </form>
+    </main>
+    <footer>
+      <span>ISC License @ Amio</span>
+      <a href="https://github.com/amio/shot.now.sh">Fork me on Github</a>
+    </footer>
+    <script type="text/javascript">
+      const form = document.querySelector('form')
+      form.onsubmit = function (ev) {
+        document.querySelector('.loading').style.visibility = 'visible'
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+  </body>
+</html>

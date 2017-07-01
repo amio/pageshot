@@ -1,0 +1,22 @@
+{
+  "name": "pageshot",
+  "version": "1.0.0",
+  "description": "Screenshot as a service.",
+  "author": "Amio <amio.cn@gmail.com>",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "now": {
+    "name": "pageshot",
+    "type": "docker",
+    "alias": "shot"
+  },
+  "dependencies": {
+    "chrome-launcher": "^0.3.0",
+    "chrome-remote-interface": "^0.23.3",
+    "koa": "^2.3.0",
+    "koa-static": "^3.0.0"
+  }
+}
