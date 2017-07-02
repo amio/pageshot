@@ -28,7 +28,7 @@ main {
 }
 
 form {
-  height: 60%;
+  height: 57%;
 }
 
 h1 {
@@ -46,7 +46,7 @@ input {
 }
 
 input.url {
-  width: 90%;
+  width: 80%;
   max-width: 720px;
 }
 
