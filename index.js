@@ -1,9 +1,12 @@
 const launchChrome = require('./lib/launch-chrome.js')
 const launchServer = require('./lib/server.js')
 
-launchChrome({ port: 9222 })
+const CHROME_PORT = 9222
+const SERVER_PORT = 3000
+
+launchChrome({ port: CHROME_PORT })
   .then(chrome => {
-    launchServer({ port: 3000, chromePort: 9222 })
+    launchServer({ port: SERVER_PORT, chromePort: CHROME_PORT })
   })
 
 process.on('uncaughtException', err => {
