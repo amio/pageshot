@@ -5,18 +5,19 @@ Pageshot as a service.
 ## Usage
 
 - __Web__: https://shot.now.sh
-- __Endpoint__: https://shot.now.sh/
+- __Endpoint__: https://shot.now.sh
 
 Examples:
 
 - https://shot.now.sh/shot?url=https://google.com
-- https://shot.now.sh/shot?url=https://google.com&height=1440
+- https://shot.now.sh/shot?url=https://github.com&full=true
 
 Query Params:
 
-- __url__: The webpage location. (required)
-- __width__: Viewport width. (default: 960)
-- __height__: Viewport height. (default: 640)
+- __`url`__: The webpage location. (required)
+- __`width`__: Viewport width. (default: 1280)
+- __`height`__: Viewport height. (default: 800)
+- __`full`__: Full page screenshot. (default: false)
 
 ## Deploy
 
