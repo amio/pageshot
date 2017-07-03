@@ -11,7 +11,7 @@
   "now": {
     "name": "pageshot",
     "type": "docker",
-    "alias": "shot"
+    "alias": ["shot", "pageshot"]
   },
   "dependencies": {
     "chrome-launcher": "^0.3.0",

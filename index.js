@@ -8,7 +8,12 @@ launchChrome({ port: CHROME_PORT })
   .then(chrome => {
     launchServer({ port: SERVER_PORT, chromePort: CHROME_PORT })
   })
+  .catch(e => {
+    console.error('CRITICAL ERR:', e)
+    process.exit(1)
+  })
 
 process.on('uncaughtException', err => {
   console.error(`UncaughtException: ${err}`)
+  process.exit(1)
 })
