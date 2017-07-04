@@ -22,14 +22,19 @@ Query Params:
 ## Deploy
 
 - to [now.sh](https://zeit.co/now):
-
 ```
 now amio/pageshot
 ```
 
-- to your own server, either:
-  - use [Dockerfile](Dockerfile).
-  - clone the code then `npm start` (require google-chrome installed)
+- using [Dockerfile](Dockerfile):
+```
+docker pull amio/pageshot
+```
+
+- running locally (require Google Chrome installed):
+```
+npm start
+```
 
 ## License
 
