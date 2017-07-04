@@ -11,12 +11,16 @@
   "now": {
     "name": "pageshot",
     "type": "docker",
-    "alias": ["shot", "pageshot"]
+    "alias": [
+      "shot",
+      "pageshot"
+    ]
   },
   "dependencies": {
     "chrome-launcher": "^0.3.0",
     "chrome-remote-interface": "^0.23.3",
     "koa": "^2.3.0",
+    "koa-proxies": "^0.3.0",
     "koa-static": "^3.0.0"
   }
 }
