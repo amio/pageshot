@@ -10,7 +10,7 @@ chromeDaemon.launch({ port: CHROME_PORT })
     launchServer({ port: SERVER_PORT, chromePort: CHROME_PORT })
   })
   .catch(e => {
-    debuglog('CRITICAL ERR:', e)
+    debuglog('ERR_CRITICAL', e)
   })
 
 process.on('uncaughtException', err => {
