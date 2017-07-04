@@ -1,6 +1,6 @@
 const chromeDaemon = require('./lib/chrome-daemon.js')
 const launchServer = require('./lib/server.js')
-const debuglog = require('util').debuglog('shot')
+const debuglog = require('./lib/debuglog.js')
 
 const CHROME_PORT = 9222
 const SERVER_PORT = 3000
