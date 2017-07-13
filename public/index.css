@@ -46,7 +46,7 @@ input {
 }
 
 input.url {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Courier', monospace;
   width: 80%;
   max-width: 720px;
 }
