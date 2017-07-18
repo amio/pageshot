@@ -1,0 +1,8 @@
+{
+  "name": "pageshot",
+  "type": "docker",
+  "alias": [
+    "shot",
+    "pageshot"
+  ]
+}

@@ -8,14 +8,6 @@
   "scripts": {
     "start": "node ."
   },
-  "now": {
-    "name": "pageshot",
-    "type": "docker",
-    "alias": [
-      "shot",
-      "pageshot"
-    ]
-  },
   "dependencies": {
     "axios": "^0.16.2",
     "chrome-launcher": "^0.3.0",
