@@ -1,4 +1,4 @@
-FROM amio/node-chrome
+FROM amio/node-chrome-cjk
 
 WORKDIR /usr/src/app
 COPY . /usr/src/app
