@@ -4,8 +4,8 @@ Pageshot as a service.
 
 ## Usage
 
-- __Web__: https://shot.now.sh
-- __Endpoint__: https://shot.now.sh
+- __Web UI__: https://shot.now.sh
+- __Endpoint__: https://shot.now.sh/shot
 
 Examples:
 
