@@ -6,6 +6,8 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
+    "deploy": "now -T pageshot",
+    "alias": "now -T pageshot alias",
     "start": "node ."
   },
   "dependencies": {
