@@ -266,9 +266,9 @@ koa-is-json@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/koa-is-json/-/koa-is-json-1.0.0.tgz#273c07edcdcb8df6a2c1ab7d59ee76491451ec14"
 
-koa-proxies@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/koa-proxies/-/koa-proxies-0.6.1.tgz#b58986d8554e2a50195c77b7fa20f2afe756be20"
+koa-proxies@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/koa-proxies/-/koa-proxies-0.6.2.tgz#faa4343baf73f70862a00444e51aea4f21ac8957"
   dependencies:
     http-proxy "^1.16.2"
     path-match "^1.2.4"
@@ -437,9 +437,9 @@ proxy-from-env@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.0.0.tgz#33c50398f70ea7eb96d21f7b817630a55791c7ee"
 
-puppeteer@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-0.13.0.tgz#2e6956205f2c640964c2107f620ae1eef8bde8fd"
+puppeteer@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-1.0.0.tgz#20f3bb6ad6c6778b4d1fb750e808a29fec0a88a4"
   dependencies:
     debug "^2.6.8"
     extract-zip "^1.6.5"

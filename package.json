@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "koa": "^2.4.1",
-    "koa-proxies": "^0.6.1",
+    "koa-proxies": "^0.6.2",
     "koa-route": "^3.2.0",
     "koa-static": "^4.0.2",
-    "puppeteer": "^0.13.0"
+    "puppeteer": "^1.0.0"
   }
 }
