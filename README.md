@@ -1,4 +1,4 @@
-# pageshot
+# pageshot [![][now-deploy-src]](#deploy)
 
 Pageshot as a service.
 
@@ -40,3 +40,5 @@ npm start
 ## License
 
 ISC © [Amio](https://github.com/amio)
+
+[now-deploy-src]: https://badgen.net/badge/%E2%96%B2/$%20now%20amio%2Fpageshot/333
