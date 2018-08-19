@@ -4,17 +4,20 @@
   "description": "Pageshot as a service.",
   "author": "Amio <amio.cn@gmail.com>",
   "license": "ISC",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "deploy": "now --public -T pageshot",
     "alias": "now -T pageshot alias",
     "start": "node ."
   },
   "dependencies": {
-    "koa": "^2.4.1",
+    "koa": "^2.5.2",
     "koa-proxies": "^0.7.0",
     "koa-route": "^3.2.0",
     "koa-static": "^5.0.0",
-    "puppeteer": "^1.0.0"
+    "micro": "^9.3.3",
+    "micro-fork": "^0.1.0",
+    "puppeteer": "^1.0.0",
+    "serve-handler": "^4.0.1"
   }
 }

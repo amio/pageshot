@@ -1,9 +1,5 @@
-const puppeteer = require('puppeteer')
 const assert = require('assert')
-
-const browser = puppeteer.launch({
-  args: ['--no-sandbox', '--disable-setuid-sandbox']
-})
+const { getBrowser } = require('./setup.js')
 
 module.exports = async function pageshot (ctx) {
   const { response } = ctx
@@ -24,7 +20,7 @@ module.exports = async function pageshot (ctx) {
 
   console.time(url)
   try {
-    const page = await (await browser).newPage()
+    const page = await (await getBrowser()).newPage()
     await page.setViewport(viewport)
     await page.goto(url, {timeout: 10000})
     response.body = await page.screenshot({fullPage})

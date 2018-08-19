@@ -1,8 +1,15 @@
 {
   "name": "pageshot",
   "type": "docker",
+  "public": true,
   "alias": [
     "shot",
     "pageshot"
-  ]
+  ],
+  "features": {
+    "cloud": "v2"
+  },
+  "limits": {
+    "maxConcurrentReqs": 2
+  }
 }
