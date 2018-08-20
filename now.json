@@ -10,6 +10,7 @@
     "cloud": "v2"
   },
   "limits": {
-    "maxConcurrentReqs": 2
+    "maxConcurrentReqs": 4,
+    "timeout": 900000
   }
 }
